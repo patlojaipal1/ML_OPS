@@ -20,7 +20,7 @@ def predict():
 
     # Make a prediction
     prediction = model.predict(user_input_preprocessed)
-    output = {"Rental Prediction using Built Model V1": float(prediction[0])}
+    output = {"Rental Prediction using Built Model V2": float(prediction[0])}
 
     return output
 
