@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/predict', methods=['POST'])
 def predict():
     # Load the model
-    model_path = 'model/Rental_prediction_model.pkl'
+    model_path = 'model/rental_prediction_model.pkl'
     model = pickle.load(open(model_path, 'rb'))
 
     user_input = request.json
